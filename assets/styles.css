@@ -1,22 +1,9 @@
 html, body {
-    background-color: beige;
-    background-image: url("images/greek-vase.png");
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
-.box {
-    width: 525px;
-    height: auto;
-    background-color: rgba(0,0,0,0.6);
-    padding: 40px;
-    color: white;
-    margin: 0 auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    text-align: center;
-    list-style: inside;
-    border-radius: 25px;
+  background-color: beige;
+  background-image: url("images/greek-vase.png");
+  max-width: 100%;
+  margin: 0;
+  overflow-x: hidden;
 }
 
 .group {
@@ -35,7 +22,14 @@ html, body {
 }
 
 header {
-    background-color: rgba(0, 41, 41, 0.75);
+  background-color: rgba(0, 41, 41, 0.75);
+}
+
+header h1 {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding-top: 10px;
 }
 
 .imgFloat {
@@ -47,14 +41,16 @@ header {
 
 header nav {
     display: flex;
-    flex-direction: row;
     justify-content: center;
   }
   
   header nav ul {
     display: flex;
     flex-direction: row;
+    list-style: none;
     padding-bottom: 0;
+    padding-left: 0;
+    margin-top: 25px;
   }
   
   header nav ul li {
@@ -68,13 +64,19 @@ header nav {
     padding: 0 20px 0 0;
     font-family: 'Montserrat Alternates', sans-serif;
   }
+
+  header nav ul li:last-child a {
+    margin-right: 0;
+  }
 /* Body */
 p {
     font-family: cursive;
 }
 
 h1 {
-    font-family: 'Courier New', Courier, monospace;
+  margin-top: 15px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
 }
 
 h2 {
@@ -140,12 +142,21 @@ a:active {
 }
 
 @media all and (min-width: 800px) {
-    section {
-      padding: 0 10%;
-    }
-    .group {
-      flex-direction: row;
-    }
+  section {
+    padding: 0 10%;
+  }
+  .group {
+    flex-direction: row;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+  header nav {
+    margin-top: 8px;
+  }
+
 }
 
   * {
